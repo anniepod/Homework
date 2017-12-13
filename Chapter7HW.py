@@ -67,10 +67,10 @@ samwords = ["name1","name2", "name3", "sam"]
 def samfxn(name):
     count =0
     for i in name:
-        if i != "sam":
+        if i == "sam":
             count += 1
-        else:
             break
+        count +=1
     return count
         
 print(samfxn(samwords))
