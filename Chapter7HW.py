@@ -75,3 +75,49 @@ def samfxn(name):
         
 print(samfxn(samwords))
         
+#Question 7
+n = 25
+approx = n/2
+while True:
+    better = (approx + n/approx)/2.0
+    print(better)
+    if abs(better - approx) < 0.0000001:
+        break
+    approx = better     #approx changes every time, not always n/2
+    print(better)
+
+
+
+#Question 10
+    
+def is_prime(n):              
+    for i in range(2,n):          #prime is only divisible by 1 and itself
+        if n % i == 0:
+            return False
+        return True
+    
+
+#Question 11
+
+import turtle
+wn = turtle.Screen()
+annie = turtle.Turtle()
+
+steps = [(160, 20), (-43, 10), (270, 8), (-43, 12)]
+
+for (angle, moves) in steps:
+    annie.right(angle)
+    annie.forward(moves)
+    
+#Question 12
+
+import turtle
+wn = turtle.Screen()
+annie = turtle.Turtle()
+annie.pensize(10)
+house = [(270,50), (30, 50), (120,50), (120,50), (225,70.1), (225,50), (225,70.1), (225,50) ]
+
+for (angle,moves) in house:
+    annie.right(angle)
+    annie.forward(moves)
+
